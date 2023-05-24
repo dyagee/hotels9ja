@@ -1,0 +1,6 @@
+"fastapi[all]"
+sqlalchemy
+psycopg2
+python-dotenv
+dnspython
+typing_extensions
