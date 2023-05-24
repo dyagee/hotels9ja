@@ -1,5 +1,5 @@
-fastapi[all]
-uvicorn[standard]
+fastapi
+uvicorn
 pydantic
 sqlalchemy
 psycopg2
