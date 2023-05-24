@@ -1,4 +1,6 @@
-"fastapi[all]"
+fastapi[all]
+uvicorn[standard]
+pydantic
 sqlalchemy
 psycopg2
 python-dotenv
