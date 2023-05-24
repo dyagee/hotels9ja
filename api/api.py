@@ -82,6 +82,9 @@ def Expensive_Hotels(skip: int = 0, limit: int = 50):
         raise HTTPException(status_code=404, detail="Hotels not Found")
     return hotels
     
-    
+if __name__ == "__main__":
+  import uvicorn
+  
+  uvicorn.run("api:app", host="0.0.0.0", reload=True)   
     
    
