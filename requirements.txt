@@ -1,8 +1,6 @@
 fastapi
-uvicorn
-pydantic
+uvicorn[standard]
 sqlalchemy
 psycopg2-binary~=2.9.6
 python-dotenv
 dnspython
-typing_extensions

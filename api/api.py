@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import RedirectResponse
-
+import uvicorn
 from routes import*
 from  models import Base
 from schemas import Hotel
@@ -83,8 +83,6 @@ def Expensive_Hotels(skip: int = 0, limit: int = 50):
     return hotels
     
 if __name__ == "__main__":
-  import uvicorn
-  
-  uvicorn.run("api:app", host="0.0.0.0", reload=True)   
+    uvicorn.run("api:app", host="0.0.0.0", reload=True)   
     
    
