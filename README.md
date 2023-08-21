@@ -9,7 +9,7 @@ There will be database migration from postgresql to mongodb, also a change of ho
 
 The hotels details is based on the information available on [hotels.ng](https://hotels.ng) website.
 
-The purpose of this project is to help the community and make hotel and logging details available to travellers; so use API with caution in accordance with the legal terms data usage as  state on [hotels.ng ](https://hotels.ng/) website.
+The purpose of this project is to help the community and make hotel and lodging details available to travellers; so use the API with caution in accordance with the legal terms of data usage as stated on [hotels.ng ](https://hotels.ng/) website.
 
 
 --- 
