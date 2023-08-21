@@ -1,5 +1,10 @@
 # Hotels9ja
 
+ 
+# **Notice:**
+
+There will be database migration from postgresql to mongodb, also a change of hosting; as such there maybe changes in the endpoints.
+
 **Hotels9ja is an API** for getting hotels details across the 36 states and capital. The search is narrowed down to the most popular cities or towns within that state.
 
 The hotels details is based on the information available on [hotels.ng](https://hotels.ng) website.
