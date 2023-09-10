@@ -1,12 +1,16 @@
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-from dotenv import load_dotenv
 import os
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 
-load_dotenv()
-SQLALCHEMY_DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URL")
-engine = create_engine(SQLALCHEMY_DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-Base = declarative_base()
+#from dotenv import load_dotenv
+#load_dotenv()
+
+MONGODB_URI = os.getenv("MONGODB_URI")
+#RANDOM_N =os.getenv("RANDOM_N")
+
+# Create a new client and connect to the server
+client = MongoClient(MONGODB_URI, server_api=ServerApi('1'))
+
+db = client.fastapi
+col = db.hotels9ja
