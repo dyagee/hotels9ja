@@ -1,3 +1,5 @@
+#the schema not used in v2
+
 from pydantic import BaseModel
 
 
@@ -6,12 +8,8 @@ class HotelBase(BaseModel):
     address: str
     price: int
 
-
-class HotelAdd(BaseModel):
+class Hotel(HotelBase):
     hotel_id:str
-    name: str
-    address: str
-    price: int
     state:str
     city:str
     rating:str | None = None
@@ -20,7 +18,7 @@ class HotelAdd(BaseModel):
     link: str | None = None
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "name": "The Grand Star Hotel",
                 "address": "No. 32 Ember Road, Island, Lagos",
@@ -34,10 +32,11 @@ class HotelAdd(BaseModel):
                 "link": "https://hotels.ng/hotels-in-lagos/apapa-grand-star-23453",
             }
         }
-
-
-class Hotel(HotelBase):
+class HotelAdd(BaseModel):
     hotel_id:str
+    name: str
+    address: str
+    price: int
     state:str
     city:str
     rating:str | None = None
@@ -46,7 +45,7 @@ class Hotel(HotelBase):
     link: str | None = None
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "name": "The Grand Star Hotel",
                 "address": "No. 32 Ember Road, Island, Lagos",
