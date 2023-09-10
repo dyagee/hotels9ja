@@ -1,5 +1,5 @@
-from models import ErrorResponseModel
-from database import col
+from api.models import ErrorResponseModel
+from api.database import col
 
 
 #load all hotels by names

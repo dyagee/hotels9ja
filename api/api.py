@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import RedirectResponse
 #from fastapi.encoders import jsonable_encoder
-from routes import*
+from api.routes import*
 #from  models import Base
 #from schemas import Hotel
 
